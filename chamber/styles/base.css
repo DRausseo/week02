@@ -90,3 +90,13 @@ footer {
         flex-direction: column;
     }
 }
+aside {
+    display: grid; /* Utilizamos CSS Grid */
+    grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+/* Estilo para los elementos dentro de la barra lateral */
+aside > * {
+    /* Estilo para cada elemento hijo de la barra lateral */
+}
