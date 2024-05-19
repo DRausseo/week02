@@ -76,7 +76,48 @@ ul, ol {
 
 /* Link styles */
 a {
-    /* Add styles for links here */
+    /* General styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #009933; /* Green color for background */
+    color: #333; /* Dark text color */
+}
+
+header {
+    background-color: #ffcc00; /* Yellow color for header */
+    color: #333; /* Dark text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+    color: #fff; /* White text color */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #009933; /* Green color for headings */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #ffcc00; /* Yellow color for footer */
+    color: #333; /* Dark text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
 }
 
 /* Footer styles */
@@ -99,4 +140,122 @@ aside {
 /* Estilo para los elementos dentro de la barra lateral */
 aside > * {
     /* Estilo para cada elemento hijo de la barra lateral */
+}        
+/* Normalize CSS */
+@import url('normalize.css');
+
+/* General styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8eded; /* Pastel pink */
+    color: #333; /* Dark text color */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+header img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+.wireframe-box {
+    border: 2px dashed #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+#site-name {
+    height: 100px;
+}
+
+#purpose {
+    height: 150px;
+}
+
+#scenarios {
+    height: 100px;
+}
+
+#color-schema {
+    height: 100px;
+}
+
+#typography {
+    height: 100px;
+}
+
+#wireframe {
+    height: 150px;
+}
+
+#hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+#cta {
+    height: 50px;
+}
+
+#events {
+    height: 100px;
+}
+
+#weather {
+    height: 100px;
+}
+
+#spotlights {
+    height: 100px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    .wireframe-box {
+        margin: 10px 0;
+    }
 }

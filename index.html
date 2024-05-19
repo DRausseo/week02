@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Danny Rausseo] - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="Assignment portal for WDD 230 - Web Frontend Development, providing access to tasks, learning resources, and projects. Ideal for students like [Your Full Name], looking to enhance their skills in HTML, CSS, and JavaScript.">
-    <meta name="author" content="[Danny Rausseo]">
+    <title>Chamber of Commerce of São Paulo - Site Plan</title>
+    <meta name="description" content="This is the site plan for the Chamber of Commerce of São Paulo, detailing the purpose, scenarios, color schema, typography, and wireframes.">
+    <meta name="author" content="Danny Rausseo">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Profile picture of [Danny Rausseo]">
-        <span>[Danny Rausseo]</span>
+        <img src="images/profile.jpg" alt="Profile picture of Danny Rausseo">
+        <span>Danny Rausseo</span>
     </header>
     <nav>
         <ul>
@@ -24,34 +24,64 @@
         </ul>
     </nav>
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <section class="card">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li><a href="week01/chamber-site-plan.html">Chamber Site Plan</a></li>
-
-                <a href="chamber/index.html">Go to de chamber-site-plan</a>
-                <li>Week 03: <a href="week03/images/landscape_optimized.webp">WebP</a></li>
-                <!-- Espacio para agregar más elementos de lista si es necesario -->
-            </ul>
+        <h1>Chamber of Commerce of São Paulo - Site Plan</h1>
+        
+        <section class="wireframe-box" id="site-name">
+            <h2>Site Name</h2>
+            <p>Chamber of Commerce of São Paulo</p>
         </section>
-        <section class="card">
-            <h2>Information</h2>
-            <iframe src="https://maps.app.goo.gl/6b4CMmmZ2DM8fGFU6" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <section class="card">
-                <h2>Page Visit Counter</h2>
-                <p id="visitCount">Total Visits: </p>
-            </section>
+        
+        <section class="wireframe-box" id="purpose">
+            <h2>Purpose</h2>
+            <p>The purpose of this website is to provide information about the Chamber of Commerce of São Paulo, its activities, events, and membership benefits.</p>
         </section>
-        <picture style="position: relative;">
-            <source srcset="imagen-mobile.webp" media="(max-width: 400px)">
-            <source srcset="images/campinas_brazil_temple_lds.webp">
-            <img src="fallback-image.jpg" alt="Campinas Brazil Temple" style="width: 100%;">
-            <div style="position: absolute; top: 10px; left: 10px; color: white; font-size: 13px; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
-                Campinas Brazil Temple
-            </div>
-        </picture>
+        
+        <section class="wireframe-box" id="scenarios">
+            <h2>Scenarios</h2>
+            <p>Different scenarios for the use of the website...</p>
+        </section>
+        
+        <section class="wireframe-box" id="color-schema">
+            <h2>Color Schema</h2>
+            <p>The color scheme for the site includes primary colors such as blue, green, and white.</p>
+        </section>
+        
+        <section class="wireframe-box" id="typography">
+            <h2>Typography</h2>
+            <p>The primary font used is Arial, with fallback options of sans-serif.</p>
+        </section>
+        
+        <section class="wireframe-box" id="wireframe">
+            <h2>Wireframe</h2>
+            <p>Wireframes and design layouts for the website...</p>
+        </section>
+        
+        <section class="wireframe-box" id="hero-image">
+            <h2>Hero Image</h2>
+            <img src="images/hero.webp" alt="Chamber of Commerce Hero Image">
+        </section>
+        
+        <section class="wireframe-box" id="cta">
+            <h2>Call to Action</h2>
+            <a href="#">Join the Chamber of Commerce</a>
+        </section>
+        
+        <section class="wireframe-box" id="events">
+            <h2>Upcoming Events</h2>
+            <p>Details about upcoming events...</p>
+        </section>
+        
+        <section class="wireframe-box" id="weather">
+            <h2>Current Weather</h2>
+            <p>Weather details...</p>
+        </section>
+        
+        <section class="wireframe-box" id="spotlights">
+            <h2>Company Spotlights</h2>
+            <p>Featured companies...</p>
+        </section>
     </main>
+    
     <script>
         // Obtiene el contador de visitas desde localStorage
         let visitCount = localStorage.getItem('visitCount');
@@ -69,10 +99,14 @@
         localStorage.setItem('visitCount', visitCount);
     </script>
     <footer>
-        <p>© <span id="currentYear"></span> [Danny Rausseo] - [São Paulo - Brazil]</p>
+        <p>© <span id="currentYear"></span> Danny Rausseo - São Paulo, Brazil</p>
         <p id="lastModified"></p> <!-- Este párrafo será llenado con JavaScript -->
     </footer>
     <!-- Enlace al archivo JavaScript -->
     <script src="scripts/getDates.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
+    </script>
 </body>
 </html>
