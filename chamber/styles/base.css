@@ -1,0 +1,70 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFCC00; /* Yellow background for the body */
+}
+
+header {
+    background-color: #009739; /* Green background for header */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+footer {
+    background-color: #009739; /* Green background for footer */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* Section styles */
+.weather, .call-to-action, .current-events, .company-spotlight {
+    background-color: #FFCC00; /* Yellow background for these sections */
+    color: #000000; /* Black text color for small text */
+    padding: 2rem;
+    width: 100%;
+}
+
+.weather h1, .call-to-action h1, .current-events h1, .company-spotlight h1 {
+    color: #009739; /* Green color for titles inside blocks */
+}
+
+.weather h2, .call-to-action h2, .current-events h2, .company-spotlight h2 {
+    color: #002776; /* Blue color for section headers */
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Ordered list marker style */
+ol li::marker {
+    color: navy;
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+ol li::before {
+    content: "☑️";
+    margin-right: 0.5rem; /* Space between the emoji and the text */
+}
