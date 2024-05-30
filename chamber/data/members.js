@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 document.addEventListener("DOMContentLoaded", () => {
     const directory = document.getElementById('directory');
     const gridButton = document.getElementById('grid');
